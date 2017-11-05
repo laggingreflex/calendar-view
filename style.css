@@ -1,0 +1,88 @@
+.calendar-view {
+  /* background: yellow; */
+  display: inline-block;
+  /* background: black; */
+}
+
+.calendar-view .header,
+.calendar-view .footer
+{
+  display: flex;
+}
+
+.calendar-view .header>*:first-child,
+.calendar-view .footer>*:first-child
+{
+  flex-grow: 100;
+}
+
+.calendar-view .header>*:first-child {
+  text-align: left;
+}
+
+.calendar-view .header button.dec:before {
+  font-family: monospace;
+  content: '˄';
+}
+.calendar-view .header button.inc:after {
+  font-family: monospace;
+  content: '˅';
+}
+
+.calendar-view table button {
+  width: 100%;
+  /* display: block; */
+}
+
+.calendar-view table {
+  table-layout: fixed;
+  /* width: 100%; */
+  width: 400px;
+}
+
+.calendar-view td,
+.calendar-view th {
+  text-align: center;
+  width: 100%;
+  /* max-width: 0; */
+}
+
+.calendar-view button {
+  background: transparent;
+  background: inherit;
+  color: inherit;
+  border: none;
+  border: 2px double transparent;
+}
+.calendar-view:not(.month) button,
+.calendar-view.month .header button
+{
+  padding: 2em;
+  padding: 2vh;
+}
+.calendar-view.month button {
+  padding: 1em;
+  padding: 1vh;
+}
+.calendar-view button:not(:disabled) {
+  cursor: pointer;
+}
+
+
+.calendar-view button:hover:not(:disabled) {
+  border: 2px double;
+}
+
+.calendar-view .selected {
+  background: blue;
+}
+
+
+.calendar-view td {
+  /* border: 1px dotted; */
+  /* border-top: */
+}
+.calendar-view button {
+  /* border: 1px dotted; */
+  /* border-top: */
+}

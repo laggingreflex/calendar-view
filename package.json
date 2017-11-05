@@ -1,0 +1,10 @@
+{
+  "name": "calendar-view",
+  "version": "0.0.0",
+  "description": "Datepicker inspired by Windows Calendar view",
+  "main": "index.js",
+  "repository": "laggingreflex/calendar-view",
+  "devDependencies": {
+    "preact": "^8.2.6"
+  }
+}
