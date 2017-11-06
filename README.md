@@ -2,15 +2,15 @@
 
 Datepicker inspired by [Windows Calendar view]
 
-Supports Preact & React
+Supports Preact & React (not tested)
 
 [Windows Calendar view]: https://docs.microsoft.com/en-us/windows/uwp/controls-and-patterns/calendar-view
 
 [Demo](https://laggingreflex.github.io/calendar-view/demo)
 
-<video autoplay loop src="https://giant.gfycat.com/CarefulFantasticIndiancow.mp4">
-  <a href="https://gfycat.com/CarefulFantasticIndiancow">
-    <img src="https://thumbs.gfycat.com/CarefulFantasticIndiancow-max-14mb.gif" alt="gif">
+<video autoplay loop src="https://giant.gfycat.com/AncientWindyLice.mp4">
+  <a href="https://gfycat.com/AncientWindyLice">
+    <img src="https://thumbs.gfycat.com/AncientWindyLice-max-14mb.gif" alt="gif">
   </a>
 </video>
 
@@ -25,6 +25,13 @@ npm i calendar-view
 ```js
 import DatePicker from 'calendar-view/react'
 
-<DatePicker>
+<DatePicker
+  date={/* initial date (optional, default: new Date) */}
+  onSelect={(date, yyyymmdd) => {
+    // triggered when user selects a date in the Month view
+    // date = JS Date object
+    // yyyymmdd = format useful for <input type='date'>
+  }}
+>
 ```
 
