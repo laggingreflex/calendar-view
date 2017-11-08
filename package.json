@@ -4,7 +4,11 @@
   "description": "Datepicker inspired by Windows Calendar view",
   "main": "index.js",
   "repository": "laggingreflex/calendar-view",
+  "peerDependencies": {
+    "preact": "*",
+    "react": "*"
+  },
   "devDependencies": {
-    "preact": "^8.2.6"
+    "preact": "*"
   }
 }
