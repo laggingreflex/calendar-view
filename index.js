@@ -1,7 +1,7 @@
 import * as _ from './utils.js';
 
 export default (lib) => {
-  const h = lib.h || lib.createComponent;
+  const h = lib.h || lib.createElement;
   const Component = lib.Component;
   // const this.wrapper = (wrapperClass, children) => h('div', { class: `calendar-view ${wrapperClass}` }, children);
   const header = (children) => h('div', { class: 'header' }, children);
