@@ -20,7 +20,12 @@ export default (lib) => {
       // console.log(`this.props.date:`, this.props.date);
       const date = new Date(this.props.date || new Date());
       // console.log(`date:`, date);
-      this.setState_({ date, currentDate: date, });
+      this.setState_({
+        date,
+        currentDate: date,
+        browsing: true,
+        today: true,
+      });
     }
 
     componentWillReceiveProps(props) {
